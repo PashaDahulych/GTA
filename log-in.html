@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Log-in</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230815112205">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="log-in">
+			<!-- <div class="log-in__container">
+                    
+                </div> -->
+			<form class="log-in__form" action="#" method="POST">
+				<h1>Вход в аккаунт</h1>
+				<h2>
+					Похоже у тебя нет аккаунта, зарегистрируй его прямо
+					сейчас
+				</h2>
+				<div class="log-in__line">
+					<input type="text" name="form[user-name]" id="user-name" data-error="Error" placeholder="Username" required />
+				</div>
+				<div class="log-in__line">
+					<input type="password" name="form[password]" id="password" data-error="Error" placeholder="Пароль" required />
+					<span class="_icon-eye"></span>
+				</div>
+				<div class="log-in__checkbox checkbox">
+					<input checked class="checkbox__input" type="checkbox" name="save-me" id="save-me" />
+					<label class="checkbox__label" for="save-me"><span class="checkbox__text">Запомнить меня</span></label>
+				</div>
+				<p>
+					Оставляйте галочку активной на свой страх и риск,
+					это увеличивает шанс взлома вашего аккаунта. Эта
+					функция будет отключена, если вход в аккаунт не
+					выполнялся последние 3 дня.
+				</p>
+				<div class="log-in__actions">
+					<button type="submit">
+						Войти в аккаунт
+					</button>
+					<a href="#">Регистрация</a>
+				</div>
+			</form>
+			<div class="log-in__bg">
+				<picture><source srcset="img/person-bg.webp" type="image/webp"><img src="img/person-bg.png" alt="person-bg" /></picture>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230815112205"></script>
+</body>
+
+</html>

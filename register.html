@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Register</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230815112205">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="register">
+			<form class="register__form" action="#" method="POST">
+				<h1>Регистрация аккаунта</h1>
+				<h2>
+					Похоже у тебя нет аккаунта, зарегистрируй его прямо
+					сейчас
+				</h2>
+				<div class="register__line">
+					<input type="text" name="form[user-name]" id="user-name" data-error="" placeholder="Username" required />
+				</div>
+				<div class="register__line">
+					<input type="email" name="form[email]" id="email" data-error="" placeholder="E-mail" required />
+				</div>
+				<div class="register__line">
+					<input type="password" name="form[password]" id="password" data-error="" placeholder="Пароль" required />
+					<span class="_icon-eye"></span>
+				</div>
+				<div class="register__line">
+					<input type="password" name="form[one-more-password]" id="one-more-password" data-error="" placeholder="Повторите пароль" required />
+					<span class="_icon-eye"></span>
+				</div>
+				<div class="register__line">
+					<input type="text" name="form[promocode]" id="promocode" data-error="" placeholder="Промокод" />
+				</div>
+				<div class="register__checkbox-wrapper">
+					<div class="register__checkbox checkbox">
+						<input checked class="checkbox__input" type="checkbox" name="save-me" id="save-me" />
+						<label class="checkbox__label" for="save-me"><span class="checkbox__text">Ознакомлен(а) с правилами проекта</span></label>
+					</div>
+					<div class="register__checkbox checkbox">
+						<input class="checkbox__input" type="checkbox" name="subscription" id="subscription" />
+						<label class="checkbox__label" for="subscription"><span class="checkbox__text">Согласен(а) на информационные
+								рассылки</span></label>
+					</div>
+				</div>
+
+				<div class="register__actions">
+					<div class="register__actions-top">
+						<a href="#" target="_blank">Правила проекта</a>
+						<a href="log-in.html">Войти</a>
+					</div>
+					<button type="submit">Создать аккаунт</button>
+				</div>
+			</form>
+			<div class="register__bg">
+				<picture><source srcset="img/person-bg.webp" type="image/webp"><img src="img/person-bg.png" alt="person-bg" /></picture>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230815112205"></script>
+</body>
+
+</html>
